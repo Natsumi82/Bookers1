@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   end
 
   def create
-     @book= Book.new(list_params)
+     @book= Book.new(book_params)
 
      if @book.save
       flash[:complete] = “Successfully!”
